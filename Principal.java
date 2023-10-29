@@ -1,23 +1,25 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
 
-
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int A, B, C, D, diferenca;
+        int numeroFunc ,quantidadeHoras;
+        double  valorHora , salario;
 
-        A = sc.nextInt();
-        B = sc.nextInt();
-        C = sc.nextInt();
-        D = sc.nextInt();
-
-        diferenca = (A * B - C * D);
+        numeroFunc = sc.nextInt();
+        quantidadeHoras = sc.nextInt();
+        valorHora = sc.nextInt();
 
 
 
-        System.out.println("DIFERENCA = " + diferenca);
+        salario = valorHora * quantidadeHoras;
+
+        System.out.println("numero do funcionario é = " + numeroFunc);
+        System.out.printf("o salario é =  %.2f%n", salario);
 
                 sc.close();
     }
