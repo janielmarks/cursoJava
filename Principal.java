@@ -6,13 +6,17 @@ public class Principal {
 
         Scanner sc = new Scanner(System.in);
 
-        int x , y , soma;
-        x = sc.nextInt();
-        y = sc.nextInt();
+        double raio, area,  PI;
 
-        soma = x + y;
+        raio = sc.nextInt();
+        area = sc.nextInt();
+        PI = 3.14159;
 
-        System.out.println("SOMA = "  + soma);
+        area = PI * raio * raio;
+
+
+
+        System.out.printf("Area =  %.4f%n " , area);
 
                 sc.close();
     }
