@@ -6,17 +6,18 @@ public class Principal {
 
         Scanner sc = new Scanner(System.in);
 
-        double raio, area,  PI;
+        int A, B, C, D, diferenca;
 
-        raio = sc.nextInt();
-        area = sc.nextInt();
-        PI = 3.14159;
+        A = sc.nextInt();
+        B = sc.nextInt();
+        C = sc.nextInt();
+        D = sc.nextInt();
 
-        area = PI * raio * raio;
+        diferenca = (A * B - C * D);
 
 
 
-        System.out.printf("Area =  %.4f%n " , area);
+        System.out.println("DIFERENCA = " + diferenca)®;
 
                 sc.close();
     }
