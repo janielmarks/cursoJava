@@ -7,19 +7,25 @@ public class Principal {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int numeroFunc ,quantidadeHoras;
-        double  valorHora , salario;
+        int cod1, qte1, cod2, qte2;
+        double preco1, preco2, total;
 
-        numeroFunc = sc.nextInt();
-        quantidadeHoras = sc.nextInt();
-        valorHora = sc.nextInt();
+        cod1 = sc.nextInt();
+        qte1 = sc.nextInt();
+        preco1 = sc.nextDouble();
+
+        cod2 = sc.nextInt();
+        qte2 = sc.nextInt();
+        preco2 = sc.nextDouble();
+
+        total = preco1 * qte1 + preco2 * qte2;
+
+        System.out.printf("o valor a ser pago é: R$ %.2f%n", total );
 
 
 
-        salario = valorHora * quantidadeHoras;
 
-        System.out.println("numero do funcionario é = " + numeroFunc);
-        System.out.printf("o salario é =  %.2f%n", salario);
+        ;
 
                 sc.close();
     }
