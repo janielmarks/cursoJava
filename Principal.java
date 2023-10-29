@@ -17,7 +17,7 @@ public class Principal {
 
 
 
-        System.out.println("DIFERENCA = " + diferenca)®;
+        System.out.println("DIFERENCA = " + diferenca);
 
                 sc.close();
     }
