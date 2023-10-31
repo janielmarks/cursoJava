@@ -16,7 +16,7 @@ public class Principal {
             duracao = 24 - horaInicial + horaFinal;
 
         }
-        System.out.println("o jogo durou " + duracao + "horas(s)");
+        System.out.println("o jogo durou " + duracao + " horas5(s)");
 
 
             sc.close();
