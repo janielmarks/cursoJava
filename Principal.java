@@ -6,12 +6,12 @@ public class Principal {
 
         System.out.println("digite um numero ");
         int numero = sc.nextInt();
-        if (numero > 0) {
+        if (numero % 2 == 0) {
 
-            System.out.println("NAO NEGATIVO");
+            System.out.println("PAR ");
         }
             else {
-                System.out.println("NEGATIVO");
+                System.out.println("IMPAR");
 
             }
             sc.close();
