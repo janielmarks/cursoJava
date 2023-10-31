@@ -4,23 +4,19 @@ public class Principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("digite um numero ");
-        int A = sc.nextInt();
-        int B = sc.nextInt();
 
-       if (A % B == 0 || B % A == 0) {
+        int horaInicial = sc.nextInt();
+        int horaFinal = sc.nextInt();
+        int duracao;
 
+        if (horaInicial < horaFinal) {
+            duracao = horaFinal - horaInicial;
+        }
+        else {
+            duracao = 24 - horaInicial + horaFinal;
 
-           System.out.println("SAO MULTIPLOS ");
-       }
-       else {
-
-           System.out.println("NAO SAO MULTIPLOS ");
-
-       }
-
-
-
+        }
+        System.out.println("o jogo durou " + duracao + "horas(s)");
 
 
             sc.close();
