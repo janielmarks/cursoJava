@@ -1,6 +1,6 @@
 package application;
 
-import entities.Rectangle;
+import entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,15 +11,28 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Rectangle rect = new Rectangle();
-        System.out.println("Enter rectangle widht and height: ");
-        rect.width = sc.nextDouble();
-        rect.height = sc.nextDouble();
+        Employee emp = new Employee();
+
+        System.out.print("Name: ");
+        emp.name = sc.nextLine();
+        System.out.print("Gross salary: ");
+        emp.grossSalary = sc.nextDouble();
+        System.out.print("Tax: ");
+        emp.tax = sc.nextDouble();
+
+        System.out.println();
+        System.out.println("Employee: " + emp);
+        System.out.println();
+        System.out.print("Which percentage to increase salary? ");
+        double percentage = sc.nextDouble();
+       emp.increaseSalary(percentage);
+
+        System.out.println();
+        System.out.println("Update data: " + emp);
 
 
-        System.out.printf("AREA = %.2f%n", rect.area());
-        System.out.printf("PERIMETER = %.2fn", rect.perimeter());
-        System.out.printf("DIAGONAL = %.2fn", rect.diagonal());
+
+
 
         sc.close();
     }
